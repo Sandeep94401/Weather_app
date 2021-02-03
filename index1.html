@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+
+    <div class="input">
+        <input type="text" placeholder="Enter the city" class="input_text">
+        <input type="submit"  onclick="myFunction()" value="Search" class="submit">
+      </div>
+    </div>
+
+    <div class="card" id="cardid">
+
+        <div class="weather_card">
+        <h2 class="curr_head">Current Weather</h2>
+        <p id="time">time</p>
+
+        <div class="two">
+        <div class="icon" width="128" height="128"><img src="icons/.png" /></div>
+
+        <p class="temp">temp</p> 
+           </div>
+
+
+ <div class="desc">feels</div>
+        </div>
+        
+        
+        <div class="information">
+            <div class="ilist" id="humid">Humidity</div>
+            <div class="ilist" id="pressure">Pressure</div>
+            <div class="ilist" id="max">Maximum temperature</div>
+            <div class="ilist" id="min">Minimum temperature</div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script>
+    
+        function myFunction() {
+          document.getElementById("cardid").innerHTML = "Hello World";          }
+    </script>
+
+    </body>
+</html>
